@@ -23,14 +23,14 @@ public class HumanEnum {
         } else {
             human = Human.SILVER;
         }
-        System.out.println(human.Name() + "‚Ì—¿‹à‚Í" + human.Price() +"‚Å‚·");
+        System.out.println(human.Name() + "ã®æ–™é‡‘ã¯" + human.Price() +"ã§ã™");
     }
 }
 
 enum Human {
-    ADULT(100, "‚¨‚Æ‚È"),
-    CHAILD(50, "‚±‚Ç‚à"),
-    SILVER(20, "ƒVƒ‹ƒo[");
+    ADULT(100, "ãŠã¨ãª"),
+    CHAILD(50, "ã“ã©ã‚‚"),
+    SILVER(20, "ã‚·ãƒ«ãƒãƒ¼");
     
     private final int price;
     private final String name;

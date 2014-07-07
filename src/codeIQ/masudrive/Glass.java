@@ -17,7 +17,7 @@ public class Glass {
         
         int sum = 0;
 
-        // B > C,���A 10 <= B+C <= 100 
+        // B > C,かつ、 10 <= B+C <= 100 
         for (int i = 2; i < maxN; i++) {
             for (int j = 1; j < i; j++) {
                 int glassSum = i + j;

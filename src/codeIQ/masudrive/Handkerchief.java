@@ -12,15 +12,15 @@ public class Handkerchief {
 
     void solve() {
 
-        // ‰Šúó‘Ô‚ğ•\‚·
+        // åˆæœŸçŠ¶æ…‹ã‚’è¡¨ã™
         Integer[] start = new Integer[N];
         for (int i = 1; i <= N; i++) {
             start[i - 1] = i;
         }
 
-        // ÅIó‘Ô‚ğ•\‚·
-        // ˆÚ“®‚µ‚È‚¢l‚ÍN”Ô–Ú‚Ìl‚Æ‚·‚éB
-        // N‚ª‹ô”‚Ìê‡AN / 2‚Ìl‚àˆÚ“®‚µ‚È‚¢B
+        // æœ€çµ‚çŠ¶æ…‹ã‚’è¡¨ã™
+        // ç§»å‹•ã—ãªã„äººã¯Nç•ªç›®ã®äººã¨ã™ã‚‹ã€‚
+        // NãŒå¶æ•°ã®å ´åˆã€N / 2ã®äººã‚‚ç§»å‹•ã—ãªã„ã€‚
         Integer[] end = new Integer[N];
         for (int i = 1; i < N; i++) {
             end[i - 1] = N - i;
@@ -33,7 +33,7 @@ public class Handkerchief {
         int min = Integer.MAX_VALUE;
 
         for (int z = 0; z < 8; z++) {
-            // nl–Ú‚ÌŒã‚ë‚Éƒnƒ“ƒJƒ`‚ğ—‚Æ‚·
+            // näººç›®ã®å¾Œã‚ã«ãƒãƒ³ã‚«ãƒã‚’è½ã¨ã™
             {
                 Integer[] gameState = Arrays.copyOf(start, N);
                 int oni = gameState[z];
@@ -65,7 +65,7 @@ public class Handkerchief {
     
                 if (dp.containsKey(key) && dp.get(key) < moveSum) continue;
     
-                // oni‚ª0‚Ìê‡A‘O‰ñˆÚ“®‚µ‚½êŠ‚Ì—×‚ÌêŠ‚ÉˆÚ“®‚·‚é
+                // oniãŒ0ã®å ´åˆã€å‰å›ç§»å‹•ã—ãŸå ´æ‰€ã®éš£ã®å ´æ‰€ã«ç§»å‹•ã™ã‚‹
                 for (int i = 0; i < N; i++) {
                     if (i == beforePosition) continue;
                     int next = i;

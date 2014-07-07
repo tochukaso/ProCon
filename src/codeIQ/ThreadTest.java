@@ -32,23 +32,23 @@ public static void main(String[] args) {
 }
 }
 
-    // ‹âsˆõƒNƒ‰ƒX
+    // éŠ€è¡Œå“¡ã‚¯ãƒ©ã‚¹
     class OfficeLady extends Thread {
-        public int myCounter = 0;                    // ”‚¦‚½1‰~‹Ê‚Ì–‡”
+        public int myCounter = 0;                    // æ•°ãˆãŸ1å††ç‰ã®æšæ•°
         @Override
         public void run() {
             for (int i = 0; i < 1000000; i++) {
-                myCounter=myCounter + 1;                        // –‡”‚ğƒJƒEƒ“ƒgƒAƒbƒv
-                MainFrame.nyuukin();                // ŠîŠ²ƒVƒXƒeƒ€“ü‹à‘€ì(ƒJƒEƒ“ƒgƒAƒbƒv)
+                myCounter=myCounter + 1;                        // æšæ•°ã‚’ã‚«ã‚¦ãƒ³ãƒˆã‚¢ãƒƒãƒ—
+                MainFrame.nyuukin();                // åŸºå¹¹ã‚·ã‚¹ãƒ†ãƒ å…¥é‡‘æ“ä½œ(ã‚«ã‚¦ãƒ³ãƒˆã‚¢ãƒƒãƒ—)
             }
         }
     }
-    // ŠîŠ²ƒVƒXƒeƒ€ƒNƒ‰ƒX
+    // åŸºå¹¹ã‚·ã‚¹ãƒ†ãƒ ã‚¯ãƒ©ã‚¹
     class MainFrame {
-        public static Integer counter = 0;            // “ü‹à‚³‚ê‚½1‰~‹Ê‚Ì–‡”
-        // 1‰~‹Ê“ü‹àˆ—
+        public static Integer counter = 0;            // å…¥é‡‘ã•ã‚ŒãŸ1å††ç‰ã®æšæ•°
+        // 1å††ç‰å…¥é‡‘å‡¦ç†
         public synchronized static void nyuukin() {
-            MainFrame.counter++;                // –‡”‚ğƒJƒEƒ“ƒgƒAƒbƒv
+            MainFrame.counter++;                // æšæ•°ã‚’ã‚«ã‚¦ãƒ³ãƒˆã‚¢ãƒƒãƒ—
         }
     }
 

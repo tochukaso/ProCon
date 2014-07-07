@@ -64,7 +64,7 @@ public class MajikAnaglam {
                 System.out.println();
             }
 
-            // ‰¡
+            // æ¨ª
             for (int i = 0; i < N; i++) {
                 int num = 0;
                 for (int j = 0; j < N; j++) {
@@ -74,7 +74,7 @@ public class MajikAnaglam {
             }
 
             
-            // c
+            // ç¸¦
             for (int i = 0; i < N; i++) {
                 int num = 0;
                 for (int j = 0; j < N; j++) {
@@ -84,7 +84,7 @@ public class MajikAnaglam {
             }
 
 
-            // ŽÎ‚ß(‰EãË¶‰º)
+            // æ–œã‚(å³ä¸Šâ‡’å·¦ä¸‹)
             {
                 int num = 0;
                 for (int j = 0; j < N; j++) {
@@ -97,7 +97,7 @@ public class MajikAnaglam {
             }
 
             
-            // ŽÎ‚ß(¶ãË‰E‰º)
+            // æ–œã‚(å·¦ä¸Šâ‡’å³ä¸‹)
             {
                 int num = 0;
                 for (int i = 0; i < N; i++) {
